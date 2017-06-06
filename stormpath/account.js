@@ -352,7 +352,7 @@ class Account extends Base {
     });
     const numApiKeys = this.apiKeys.length;
     if (numApiKeys > 10) {
-      logger.warn(`Account id=${this.id} has ${numApiKeys} apiKeys, but max is 10. Dropping ${numApiKeys - 10} keys.`);
+	logger.warn(`Account id=${this.id} login=${this.login} has ${numApiKeys} apiKeys, but max is 10. Dropping ${numApiKeys - 10} keys.`);
     }
 
     // Add recovery question answer
